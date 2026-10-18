@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>You’re Invited! Saiesha’s 1st Birthday</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="bg" aria-hidden="true"><div class="sparkles"></div></div>
+<main>
+<section class="hero">
+  <h1>You’re Invited! ✨</h1>
+  <p class="lead">Come celebrate <span data-f="name"></span>’s 1st birthday with a day full of love, laughter &amp; cake!</p>
+
+  <div class="frame">
+    <div class="poster">
+      <!-- SWAP YOUR POSTER: replace public/poster1.jpg and public/poster2.jpg with your own images
+           (keep the file names, or change the src below). If an image fails to load, a placeholder is shown. -->
+      <img src="/poster1.jpg" alt="Invitation: Our little princess is turning one. Sunday, November 1st.">
+      <img src="/poster2.jpg" alt="Invitation: Celebrate her 1st birthday on 1st November.">
+    </div>
+  </div>
+  <div class="thumbs" role="group" aria-label="Choose a poster">
+    <button class="thumb" aria-pressed="true">Collage</button>
+    <button class="thumb" aria-pressed="false">Portrait</button>
+  </div>
+  <div class="acts">
+    <button class="btn main" id="burst">Burst joy 🎉</button>
+    <button class="btn" id="more">See the details</button>
+  </div>
+</section>
+
+<section id="details">
+  <div class="card">
+    <h2>Party details</h2>
+    <div class="row" style="--c:var(--p1)"><span class="ico">📅</span><div><small>Date</small><b data-f="dateText"></b></div></div>
+    <div class="row" style="--c:var(--p2)"><span class="ico">⏰</span><div><small>Time</small><b data-f="timeText"></b></div></div>
+    <div class="row" style="--c:var(--p3)"><span class="ico">📍</span><div><small>Venue</small><b data-f="venue"></b><br><span data-f="address"></span></div></div>
+    <div class="row" style="--c:var(--p4)"><span class="ico">🎀</span><div><small>Theme and dress code</small><b data-f="theme"></b><br><span data-f="dress"></span></div></div>
+    <div class="acts">
+      <a class="btn main" id="maps" target="_blank" rel="noopener">Open in Maps</a>
+      <button class="btn" id="copy">Copy location</button>
+    </div>
+  </div>
+</section>
+
+<section class="rsvp">
+  <h2>Will you join us?</h2>
+  <p>Tap to say you’re coming, or send her a birthday wish.</p>
+  <div class="rsvp-btns">
+    <button class="btn" data-k="come" aria-pressed="false">I’m coming! 🎉</button>
+    <button class="btn" data-k="wish" aria-pressed="false">Wish happy birthday 🎂</button>
+  </div>
+  <p class="say" aria-live="polite"></p>
+</section>
+
+<footer class="count">
+  <h2>Counting down to cake</h2>
+  <div class="units">
+    <div class="unit"><b>0</b><span>days</span></div>
+    <div class="unit"><b>00</b><span>hours</span></div>
+    <div class="unit"><b>00</b><span>minutes</span></div>
+    <div class="unit"><b>00</b><span>seconds</span></div>
+  </div>
+  <p class="cd-note">until the party begins 🎈</p>
+  <p class="close">With all our love 💕<br>Can’t wait to celebrate her first year with you.</p>
+</footer>
+</main>
+<div class="toast" role="status"></div>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
